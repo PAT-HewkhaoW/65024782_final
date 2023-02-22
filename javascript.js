@@ -9,18 +9,13 @@ function createItemList() {
     const inBirth = document.getElementById('birthdate').value;
 
     const TB = document.getElementById('table');
-
     var row = document.createElement('tr');
 
-    var tname = document.createElement('td');
-    var tsurname = document.createElement('td');
-    var tgender = document.createElement('td');
-    var tdate = document.createElement('td');
+    var tname = document.createElement('td').innerHTML(inName);
+    var tsurname= document.createElement('td').innerHTML(inSurname);
+    var tgender= document.createElement('td').innerHTML(inGender);
+    var tdate= document.createElement('td').innerHTML(inBirth);
 
-    tname.innerText(inName);
-    tname.innerText(inSurname);
-    tname.innerText(inGender);
-    tname.innerText(inBirth);
 
     row.appendChild(tname);
     row.appendChild(tsurname);
